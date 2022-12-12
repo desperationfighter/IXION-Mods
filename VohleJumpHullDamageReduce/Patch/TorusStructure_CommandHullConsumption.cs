@@ -11,10 +11,10 @@ namespace VohleJumpHullDamageReduce.Patch
         [HarmonyPrefix]
         public static bool Prefix(CommandHullConsumption __instance)
         {
-            //Game.Torus.torus.State.hullIntegrity -= 50f;
-            Game.Torus.torus.State.hullIntegrity = 250f;
+            Game.Torus.torus.State.HullIntegrity -= 50f;
+            //Game.Torus.torus.State.HullIntegrity = 250f;
 
-            Plugin.mylogger.LogInfo("Set custom hull damange on Jump hopefully");
+            //Plugin.mylogger.LogInfo("Set custom hull damange on Jump hopefully");
             return true;
         }
     }
